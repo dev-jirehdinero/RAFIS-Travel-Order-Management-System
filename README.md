@@ -1,14 +1,5 @@
 # RAFIS Dashboard (Laravel)
 
-App-layer code for the seven prompts in `claude_laravel_prompts.pdf`:
-migrations, models, dashboard controller + Blade/Tailwind view, factories + seeder,
-form validation + routes, native Google Drive upload (replaces Make.com), and RBAC.
-
-These files are meant to be dropped into a fresh Laravel project (11/12/13).
-They were syntax-checked with `php -l` but **not booted or run**, because the
-build environment could not reach Packagist to install Laravel. Run the test
-suite first (step 5) and tell me about anything that fails.
-
 ## Setup
 
 ```bash
@@ -94,3 +85,10 @@ as a friendly message on the dashboard; details go to `storage/logs/laravel.log`
 - The personnel table is named `personnel` (Laravel wouldn't pluralise it).
 - Staff accounts are linked to a personnel record through `users.personnel_id`.
 - Uploading a file does not change the status; only an OIC/Admin does.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Author
+Jireh Dinero
